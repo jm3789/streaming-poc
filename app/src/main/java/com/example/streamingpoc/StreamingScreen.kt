@@ -12,8 +12,9 @@ fun StreamingScreen() {
     val context = LocalContext.current
     var isStreaming by remember { mutableStateOf(false) }
 
-    val rtmpUrl = "rtmp://rtmp-ls2-k1.video.media.ntruss.com:8080/relay/keykey"
-    val hlsUrl = "https://playback-live-ls2.video.media.ntruss.com/relay/keykey/index.m3u8"
+    val streamingKey = BuildConfig.STREAMING_KEY
+    val rtmpUrl = "rtmp://rtmp-ls2-k1.video.media.ntruss.com:8080/relay/$streamingKey"
+    val hlsUrl = "https://playback-live-ls2.video.media.ntruss.com/relay/$streamingKey/index.m3u8"
 
     Column (
         modifier = Modifier
