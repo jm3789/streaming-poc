@@ -14,7 +14,7 @@ fun StreamingScreen() {
 
     val streamingKey = BuildConfig.STREAMING_KEY
     val rtmpUrl = "rtmp://rtmp-ls2-k1.video.media.ntruss.com:8080/relay/$streamingKey"
-    val hlsUrl = "https://playback-live-ls2.video.media.ntruss.com/relay/$streamingKey/index.m3u8"
+    val hlsUrl = "https://fihbspeg13228.edge.naverncp.com/live/video/ls-20251216093439-aHGcA/360p-16-9/playlist.m3u8"
 
     Column (
         modifier = Modifier
