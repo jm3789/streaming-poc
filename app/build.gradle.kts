@@ -6,9 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.streamingpoc"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.streamingpoc"
@@ -42,6 +40,12 @@ android {
 }
 
 dependencies {
+    implementation("com.github.pedroSG94.RootEncoder:library:2.6.6")
+
+    implementation("androidx.media3:media3-exoplayer:1.8.0")
+    implementation("androidx.media3:media3-exoplayer-dash:1.8.0")
+    implementation("androidx.media3:media3-ui:1.8.0")
+    implementation("androidx.media3:media3-ui-compose:1.8.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
